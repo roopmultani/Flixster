@@ -14,7 +14,7 @@ The following **required** functionality is completed:
 
 The following **bonus** functionality is completed:
 
-* [x] Views should be responsive for both **landscape/portrait mode.
+* [x] Views should be responsive for both **landscape/portrait mode**.
 * [x] In portrait mode, the poster image, title, and movie overview is shown.
 * [x] In landscape mode, the rotated alternate layout should use the backdrop image instead and show the title and movie overview to the right of it.
 
