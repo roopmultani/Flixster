@@ -55,6 +55,7 @@ The following **bonus** functionality is completed:
 Here's a walkthrough :
 
 <img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
+
 ### Notes
 
 Describe any challenges encountered while building the app.
