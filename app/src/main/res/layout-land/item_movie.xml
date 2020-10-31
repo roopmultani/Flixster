@@ -4,6 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -15,7 +16,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@tools:sample/avatars"
+            app:srcCompat="@drawable/flicks_backdrop_placeholder"/>
 
         <TextView
             android:id="@+id/tvTitle"
@@ -25,7 +27,7 @@
             android:layout_marginStart="5dp"
             android:layout_toEndOf="@+id/ivPoster"
             android:fontFamily="@font/miltonian_tattoo"
-            android:textColor="#394867"
+            android:textColor="#72B0B8"
             android:textSize="24sp"
             android:textStyle="bold|italic"
             tools:text="movie title " />
@@ -40,8 +42,10 @@
             android:layout_marginTop="5dp"
             android:layout_toEndOf="@+id/ivPoster"
             android:fontFamily="serif"
-            android:textColor="#8F8D8D"
-            android:textSize="14sp"
+            android:textColor="#FFFDFD"
+            android:textSize="16sp"
+            android:maxLines="5"
+            android:ellipsize="end"
             tools:text="about this movie " />
 
 </RelativeLayout>

@@ -1,16 +1,19 @@
 package com.example.flixster;
 
 import androidx.appcompat.app.AppCompatActivity;
+//import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toolbar;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.example.flixster.adapters.MovieAdapter;
+//import com.example.flixster.databinding.ActivityMainBinding;
 import com.example.flixster.models.Movie;
 
 import org.json.JSONArray;
@@ -24,6 +27,8 @@ import okhttp3.Headers;
 
 public class MainActivity extends AppCompatActivity {
 
+    //private ActivityMainBinding binding;
+
     public static final String NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
     public static final String TAG = "MainActivity";
 
@@ -33,6 +38,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        // Inflate the content view (replacing `setContentView`)
+        //binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        // Store the field now if you'd like without any need for casting
+        //TextView tvLabel = binding.tvFullName;
+        //tvLabel.setAllCaps(true);
+        // Or use the binding to update views directly on the binding
+        //binding.tvFullName.setText("Rupinder Kaur");
+        // Create or access the data to bind
+        //User user = new User("Rupinder","Kaur");
+        // Attach the user to the binding
+        //binding.setUser(user);
+
+
 
         RecyclerView rvMovies = findViewById(R.id.rvMovies);
         movies = new ArrayList<>();
