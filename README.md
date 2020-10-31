@@ -54,7 +54,7 @@ The following **bonus** functionality is completed:
 
 Here's a walkthrough :
 
-<img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
+<img src='walkthru.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
 
 ### Notes
 
